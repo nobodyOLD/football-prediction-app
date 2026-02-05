@@ -1,12 +1,13 @@
 {
   "accountAssociation": {
-    "header": "",
-    "payload": "",
-    "signature": ""
+    "header": "eyJmaWQiOjg4NzMsInR5cGUiOiJjdXN0b2RpYWwiLCJrZXkiOiJweXJzayJ9",
+    "payload": "eyJkb21haW4iOiJmb290YmFsbC1wcmVkaWN0aW9uLW5xaXk3bzF6cS1ub2JvZHlzLXByb2plY3RzLWEzYWM3Y2JmLnZlcmNlbC5hcHAifQ",
+    "signature": "MHhkYj..."
   },
   "frame": {
     "version": "1",
     "name": "Laliga Predictor",
+    "description": "AI-powered football match predictor for La Liga and EPL.",
     "iconUrl": "https://football-prediction-nqiy7o1zq-nobodys-projects-a3ac7cbf.vercel.app/globe.svg",
     "homeUrl": "https://football-prediction-nqiy7o1zq-nobodys-projects-a3ac7cbf.vercel.app",
     "imageUrl": "https://football-prediction-nqiy7o1zq-nobodys-projects-a3ac7cbf.vercel.app/globe.svg",
