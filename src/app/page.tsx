@@ -5,6 +5,7 @@ import Image from "next/image";
 import { TEAMS } from "../lib/data";
 import { predictMatch } from "../lib/predictor";
 import { PredictionResult, TeamConditions } from "../lib/types";
+import sdk from "@farcaster/frame-sdk";
 
 // Types for Live Data
 interface LiveMatch {
@@ -28,6 +29,22 @@ export default function Home() {
   const [matches, setMatches] = useState<LiveMatch[]>([]);
   const [lastUpdated, setLastUpdated] = useState<number | null>(null);
   const [loadingMatches, setLoadingMatches] = useState(true);
+  const [isSDKLoaded, setIsSDKLoaded] = useState(false);
+
+  // Initialize Farcaster SDK
+  useEffect(() => {
+    const load = async () => {
+      try {
+        await sdk.actions.ready();
+      } catch (e) {
+        console.error("Farcaster SDK ready() failed:", e);
+      }
+    };
+    if (sdk && !isSDKLoaded) {
+      setIsSDKLoaded(true);
+      load();
+    }
+  }, [isSDKLoaded]);
 
   // New State for Advanced Factors
   const [homeConditions, setHomeConditions] = useState<TeamConditions>(initialConditions);
