@@ -1,0 +1,18 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "Laliga Predictor",
+    "iconUrl": "https://football-prediction-nqiy7o1zq-nobodys-projects-a3ac7cbf.vercel.app/globe.svg",
+    "homeUrl": "https://football-prediction-nqiy7o1zq-nobodys-projects-a3ac7cbf.vercel.app",
+    "imageUrl": "https://football-prediction-nqiy7o1zq-nobodys-projects-a3ac7cbf.vercel.app/globe.svg",
+    "buttonTitle": "Predict Matches",
+    "splashImageUrl": "https://football-prediction-nqiy7o1zq-nobodys-projects-a3ac7cbf.vercel.app/globe.svg",
+    "splashBackgroundColor": "#ffffff",
+    "webhookUrl": "https://football-prediction-nqiy7o1zq-nobodys-projects-a3ac7cbf.vercel.app/api/webhook"
+  }
+}
